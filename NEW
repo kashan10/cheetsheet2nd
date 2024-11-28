@@ -1,0 +1,3 @@
+1 . nmap -p 389 -sV 10.10.1.22
+2. i. ldapsearch -h 10.10.1.22 -x -s base namingcontexts
+    II .ldapsearch -x -h 10.10.1.22 -b "DC=CEH,DC=com"
