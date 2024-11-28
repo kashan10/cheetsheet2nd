@@ -6,3 +6,4 @@ SMTP (Mail Transport): Port 25
 IMAP: Port 143
 POP3: Port 110
 
+snow -C -p "password" res.txt
