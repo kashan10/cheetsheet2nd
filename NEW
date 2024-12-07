@@ -43,3 +43,5 @@ sql-> with session
 sqlmap -u <"url"> --cookie=<"cookie"> --dbs
 sqlmap -u <"url"> --cookie=<"cookie"> -D <database name> --tables
 sqlmap -u <"url"> --cookie=<"cookie"> -D <database name> -T <table name> --dump
+
+hashes.com
