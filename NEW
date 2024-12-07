@@ -38,3 +38,8 @@ njRAT -5552
 theef -6703
 
 tcp.flags.syn == 1 and tcp.flags.ack == 0 
+
+sql-> with session
+sqlmap -u <"url"> --cookie=<"cookie"> --dbs
+sqlmap -u <"url"> --cookie=<"cookie"> -D <database name> --tables
+sqlmap -u <"url"> --cookie=<"cookie"> -D <database name> -T <table name> --dump
