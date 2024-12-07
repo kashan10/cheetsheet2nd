@@ -59,3 +59,6 @@ Aircrack-ng Crack the wireless encryption and identify the Wi-Fi password
 
 
 filter as mqtt and see the public message and then go to down panel open and see the message.
+RDP ->
+Sudo nmap -p 3389 <IP/24>
+hydra-l <username> -P </path to password wordlist.txt> <IP> RDP
