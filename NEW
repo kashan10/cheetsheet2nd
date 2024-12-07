@@ -52,3 +52,6 @@ Aircrack-ng Crack the wireless encryption and identify the Wi-Fi password
 1st tentative:aircrack-ng pcapfile (usually works only for WEP encryption) 
 2nd tentative: aircrack-ng -w passwordlist pcapfile 
 3rd tentative: adding BSSID (-b flag): aircrack-ng -b BSSID -w passwordlist pcapfile (To find BSSID: on Wireshark click on packet, search BSSID and copy value) 
+
+
+filter as mqtt and see the public message and then go to down panel open and see the message.
