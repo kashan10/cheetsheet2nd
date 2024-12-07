@@ -1,4 +1,4 @@
-1 . nmap -p 389 -sV 10.10.1.22 (10\0\20348)
+1 . nmap -p 389 -sV 10.*10.0.20348
 2. i. ldapsearch -h 10.10.1.22 -x -s base namingcontexts
     II .ldapsearch -x -h 10.10.1.22 -b "DC=CEH,DC=com"
 3(7) nmap -p 25,110,143 -sV <Target IP> 
@@ -39,8 +39,8 @@ ssh <username>@192.168.0.1
 https://georgeom.net/StegOnline/upload
 
 njRAT -5552
-theef -6703
-
+theef5 -6703
+19554
 tcp.flags.syn == 1 and tcp.flags.ack == 0 
 
 sql-> with session
